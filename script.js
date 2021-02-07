@@ -62,7 +62,7 @@ function addMealToDOM(meal) {
     <div class="main">
         <h2>Ingredients</h2>
         <ul>
-            ${ingredients.map((ing) => `<li>${ing}</li>`).join("")}
+            ${ingredients.map((img) => `<li>${img}</li>`).join("")}
         </ul>
     </div>
   </div>`;
@@ -77,7 +77,7 @@ mealsElement.addEventListener("click", (element) => {
     }
   });
   if (mealInfo) {
-    const mealID = mealInfo.getAttribute("data-mealid");
+    const mealID = mealInfo.getAttribute("data-mealId");
     getMealById(mealID);
   }
 });
