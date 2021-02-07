@@ -68,8 +68,8 @@ function addMealToDOM(meal) {
   </div>`;
 }
 submit.addEventListener("submit", searchMeal);
-mealsElement.addEventListener("click", (e) => {
-  const mealInfo = e.path.find((item) => {
+mealsElement.addEventListener("click", (element) => {
+  const mealInfo = element.path.find((item) => {
     if (item.classList) {
       return item.classList.contains("meal-info");
     } else {
